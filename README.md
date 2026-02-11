@@ -7,11 +7,11 @@ It is a QA automation pet-project created to simulate a real-world API testing w
 The project includes smoke and regression test suites for the public Restful Booker API and covers positive, negative, security and contract test scenarios.
 
 ## The main goal of this project is to showcase:
--API testing skills
--test design
--automation with Postman
--CI integration
--bug reporting
+- API testing skills
+- test design
+- automation with Postman
+- CI integration
+- bug reporting
 
 ## Tools & Technologies:
 -Postman
