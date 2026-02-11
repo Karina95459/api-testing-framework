@@ -6,14 +6,14 @@ This project demonstrates API testing using Postman, Newman and GitHub Actions.
 It is a QA automation pet-project created to simulate a real-world API testing workflow.
 The project includes smoke and regression test suites for the public Restful Booker API and covers positive, negative, security and contract test scenarios.
 
-##The main goal of this project is to showcase:
+## The main goal of this project is to showcase:
 -API testing skills
 -test design
 -automation with Postman
 -CI integration
 -bug reporting
 
-##Tools & Technologies:
+## Tools & Technologies:
 -Postman
 -Newman
 -JavaScript (Postman test scripts)
@@ -23,7 +23,7 @@ The project includes smoke and regression test suites for the public Restful Boo
 -GitHub Actions (CI)
 -HTML reports (Newman reporter)
 
-##Project structure:
+## Project structure:
 collections/
     smoke.json
     regression.json
@@ -43,7 +43,7 @@ docs/
 -.github/workflows:
   GitHub Actions CI configuration.
 
-##Test coverage
+## Test coverage
 Smoke tests:
 -Basic API functionality:
 -API health check
@@ -54,7 +54,7 @@ Smoke tests:
 Smoke tests run automatically on each push to the main branch.
 Regression tests
 
-##Full regression suite includes:
+## Full regression suite includes:
 -Booking
 -Create booking
 -Get booking
@@ -75,7 +75,7 @@ Regression tests
 
 Regression tests can be triggered manually from GitHub Actions.
 
-##Running tests locally
+## Running tests locally
 To run tests locally:
 1)Install Node.js
 2)Install Newman globally
@@ -85,7 +85,7 @@ HTML report will be generated in the reports folder
 
 CI — GitHub Actions
 
-##This project uses GitHub Actions for continuous integration.
+## This project uses GitHub Actions for continuous integration.
 Smoke tests:
 1)run automatically on push to main branch
 2)generate HTML report
@@ -96,13 +96,13 @@ Regression tests:
 3)upload report as artifact
 This simulates a real QA automation pipeline.
 
-##Known issues (bugs found during testing)
+## Known issues (bugs found during testing)
 The following issues were discovered during testing:
 1)Creating booking without firstname returns 500 instead of 400
 2)Invalid date format is accepted (should return validation error)
 3)Checkout date earlier than check-in is accepted (should fail validation)
 
-##Bug reports are documented in GitHub Issues.
+## Bug reports are documented in GitHub Issues.
 
 ## How to run in CI
 Smoke tests run automatically on push.
