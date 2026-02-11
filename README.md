@@ -101,8 +101,7 @@ The following issues were discovered during testing:
 - Creating booking without firstname returns 500 instead of 400
 - Invalid date format is accepted (should return validation error)
 - Checkout date earlier than check-in is accepted (should fail validation)
-
-# Bug reports are documented in GitHub Issues.
+Bug reports are documented in GitHub Issues.
 
 ## How to run in CI
 Smoke tests run automatically on push.
