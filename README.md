@@ -108,6 +108,17 @@ Smoke tests run automatically on push.
 Regression tests can be triggered manually in GitHub Actions:
 Actions → API tests → Run workflow
 
+## Running tests locally
+### Run tests via command line
+
+Smoke tests:
+newman run collections/smoke.json -e environments/dev.json
+
+Regression tests:
+newman run collections/regression.json -e environments/dev.json
+
+Generate HTML report:
+newman run collections/smoke.json -e environments/dev.json -r htmlextra --reporter-htmlextra-export reports/smoke-report.html
 
 Author:
 Karina Lukiyanova
