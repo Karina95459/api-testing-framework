@@ -14,14 +14,14 @@ The project includes smoke and regression test suites for the public Restful Boo
 - bug reporting
 
 ## Tools & Technologies:
--Postman
--Newman
--JavaScript (Postman test scripts)
--REST API
--Node.js
--Git & GitHub
--GitHub Actions (CI)
--HTML reports (Newman reporter)
+- Postman
+- Newman
+- JavaScript (Postman test scripts)
+- REST API
+- Node.js
+- Git & GitHub
+- GitHub Actions (CI)
+- HTML reports (Newman reporter)
 
 ## Project structure:
 collections/
@@ -34,75 +34,75 @@ docs/
 .github/workflows/
     api-tests.yml
     
--collections:
+- collections:
   Contains Postman collections for smoke and regression testing.
--environments:
+- environments:
   Stores environment variables such as base URL, token and booking IDs.
--docs:
+- docs:
   Contains QA documentation.
--.github/workflows:
+- .github/workflows:
   GitHub Actions CI configuration.
 
 ## Test coverage
 Smoke tests:
--Basic API functionality:
--API health check
--Auth token generation
--Create booking
--Get booking by ID
+- Basic API functionality:
+- API health check
+- Auth token generation
+- Create booking
+- Get booking by ID
 
 Smoke tests run automatically on each push to the main branch.
 Regression tests
 
 ## Full regression suite includes:
--Booking
--Create booking
--Get booking
--Update booking
--Delete booking
--Negative scenarios
--Missing required fields
--Invalid data types
--Invalid date formats
--Business logic validation
--Security
--Update without token
--Delete without token
--Invalid token usage
--Contract
--Response structure validation
--Field types validation
+- Booking
+- Create booking
+- Get booking
+- Update booking
+- Delete booking
+- Negative scenarios
+- Missing required fields
+- Invalid data types
+- Invalid date formats
+- Business logic validation
+- Security
+- Update without token
+- Delete without token
+- Invalid token usage
+- Contract
+- Response structure validation
+- Field types validation
 
 Regression tests can be triggered manually from GitHub Actions.
 
 ## Running tests locally
 To run tests locally:
-1)Install Node.js
-2)Install Newman globally
-3)Export Postman collections and environment
-4)Run smoke or regression collection using Newman
+- Install Node.js
+- Install Newman globally
+- Export Postman collections and environment
+- Run smoke or regression collection using Newman
 HTML report will be generated in the reports folder
 
 CI — GitHub Actions
 
 ## This project uses GitHub Actions for continuous integration.
 Smoke tests:
-1)run automatically on push to main branch
-2)generate HTML report
-3)upload report as artifact
+- run automatically on push to main branch
+- generate HTML report
+- upload report as artifact
 Regression tests:
-1)run manually via GitHub Actions
-2)generate HTML report
-3)upload report as artifact
+- run manually via GitHub Actions
+- generate HTML report
+- upload report as artifact
 This simulates a real QA automation pipeline.
 
 ## Known issues (bugs found during testing)
 The following issues were discovered during testing:
-1)Creating booking without firstname returns 500 instead of 400
-2)Invalid date format is accepted (should return validation error)
-3)Checkout date earlier than check-in is accepted (should fail validation)
+- Creating booking without firstname returns 500 instead of 400
+- Invalid date format is accepted (should return validation error)
+- Checkout date earlier than check-in is accepted (should fail validation)
 
-## Bug reports are documented in GitHub Issues.
+# Bug reports are documented in GitHub Issues.
 
 ## How to run in CI
 Smoke tests run automatically on push.
