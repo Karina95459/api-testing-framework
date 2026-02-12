@@ -42,7 +42,6 @@ Smoke tests:
 - Get booking by ID
 
 Smoke tests run automatically on each push to the main branch.
-Regression tests
 
 ## Full regression suite includes:
 - Booking
@@ -71,10 +70,9 @@ To run tests locally:
 - Install Newman globally
 - Export Postman collections and environment
 - Run smoke or regression collection using Newman
-HTML report will be generated in the reports folder
+- HTML report will be generated in the reports folder
 
-CI — GitHub Actions
-
+## CI — GitHub Actions
 ## This project uses GitHub Actions for continuous integration.
 Smoke tests:
 - run automatically on push to main branch
@@ -108,7 +106,8 @@ Regression tests:
 newman run collections/regression.json -e environments/dev.json
 
 Generate HTML report:
-newman run collections/smoke.json -e environments/dev.json -r htmlextra --reporter-htmlextra-export reports/smoke-report.html
+- smoke: newman run collections/smoke.json -e environments/dev.json -r htmlextra --reporter-htmlextra-export reports/smoke-report.html
+- regression: newman run collections/regression.json -e environments/dev.json -r htmlextra --reporter-htmlextra-export reports/regression-report.html
 
 Author:
 Karina Lukiyanova
