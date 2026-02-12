@@ -23,17 +23,7 @@ The project includes smoke and regression test suites for the public Restful Boo
 - GitHub Actions (CI)
 - HTML reports (Newman reporter)
 
-## Project structure:
-collections/
-    smoke.json
-    regression.json
-environments/
-    dev.json
-docs/
-    checklist.md
-.github/workflows/
-    api-tests.yml
-    
+## Project structure:    
 - collections:
   Contains Postman collections for smoke and regression testing.
 - environments:
