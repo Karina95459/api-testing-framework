@@ -78,6 +78,7 @@ Smoke tests:
 - run automatically on push to main branch
 - generate HTML report
 - upload report as artifact
+
 Regression tests:
 - run manually via GitHub Actions
 - generate HTML report
