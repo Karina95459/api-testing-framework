@@ -17,8 +17,6 @@ The project includes smoke and regression test suites for the public Restful Boo
 - Postman
 - Newman
 - JavaScript (Postman test scripts)
-- REST API
-- Node.js
 - Git & GitHub
 - GitHub Actions (CI)
 - HTML reports (Newman reporter)
